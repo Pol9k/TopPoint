@@ -147,7 +147,7 @@ body {
   opacity: 0;
   animation: moveBanner 1s .5s forwards;
   position: relative;
-  -webkit-text-stroke: 0.1rem #1e272e;
+  -webkit-text-stroke: 0.1rem #222;
   z-index: 99;
 }
 .start__text{
