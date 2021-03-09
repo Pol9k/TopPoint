@@ -44,6 +44,7 @@ body {
   letter-spacing: 0.1rem;
   text-shadow: 0 0.3rem 0.5rem rgb(0 0 0 / 40%);
   text-align: center;
+  position: relative;
 }
 .mx_auto {
   margin-left: auto;
@@ -118,7 +119,8 @@ body {
 .fa-volume-control-phone,
 .fa-envelope-o {
   font-size: 2rem;
-  color: #FFC312;
+  /* color: #FFC312; */
+  color: #d10260;
   position: absolute;
   left: -2.8rem;
   top: -0.2rem;
@@ -142,12 +144,14 @@ body {
   font-size: 8rem;
   font-weight: 400;
   color: #2c3e50;
+  /* color: #d10260; */
+  color: #de0266;
   letter-spacing: 0.2rem;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
   opacity: 0;
   animation: moveBanner 1s .5s forwards;
   position: relative;
-  -webkit-text-stroke: 0.1rem #222;
+  -webkit-text-stroke: 0.1rem #d10260;
   z-index: 99;
 }
 .start__text{
@@ -169,7 +173,7 @@ body {
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  background-color: #f39c12;
+  background-color: #de0266;
   border-radius: 2rem;
   border: none;
   text-transform: uppercase;
@@ -215,13 +219,12 @@ body {
 }
 .aboutTopPoint-title {
   display: inline-block;
-  border-bottom: .3rem solid #333;
+  border-bottom: .3rem solid #f39c12;
 }
 .aboutTopPoint-text {
   margin-top: 1.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
-
 }
 .services {
   margin-top: 1rem;
@@ -242,13 +245,14 @@ body {
 }
 .service i {
   font-size: 6rem;
-  color: #888;
+  color: #f39c12;
   margin-bottom: 2rem;
   text-shadow: 0.1rem 0.1rem 0.5rem #555;
 }
 .service h2 {
   font-size: 2rem;
-  color: #fff;
+  /* color: #f39c12; */
+  color: #f2f2f2;
   background-color: #777;
   width: 20rem;
   letter-spacing: 0.1rem;
@@ -260,6 +264,34 @@ body {
 .views {
   padding-top: 3rem;
   padding-bottom: 2rem;
+}
+.views-title {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  /* text-shadow: none; */
+}
+.views-title::before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: -2rem;
+  background: rgba(255,0,88, 0.3);
+  transform: skew(-10deg);
+  width: 110%;
+  height: .4rem;
+  z-index: -1;
+}
+.views-title::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: -1rem;
+  background: rgba(255,0,88, 0.3);
+  transform: skew(-10deg);
+  width: 110%;
+  height: .4rem;
+  z-index: -1;
 }
 .views__sections {
   margin-top: 4rem;
@@ -307,7 +339,7 @@ body {
   transform: scale(1.15);
 }
 .views__section:hover .views__section-title {
-  color: #f39c12;
+  color: #de0266;
 }
 /* END ViEW  */
 
@@ -316,6 +348,7 @@ body {
 }
 .explain-title {
   margin-top: 5rem;
+
 }
 .explain-text {
   margin-top: 3rem;
