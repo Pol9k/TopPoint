@@ -402,7 +402,7 @@ body {
 }
 .box-case--text-li {
   display: inline-block;
-  margin: 0.4rem 0;
+  padding: 0.4rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
   width: 100%;
@@ -411,17 +411,25 @@ body {
 }
 .box-case--text-li span {
   position: absolute;
-  bottom: 0;
+  bottom: 0.4rem;
   right: 0.5rem;
   font-weight: 600;
   color: #2c3e50;
 }
+.box-case--text ul li:nth-child(2),
+.box-case--text ul li:nth-child(4){
+  background: rgb(241, 240, 240);
+}
 .box-case--text-li:last-child {
   text-align: right;
   margin-top: 1.5rem;
-  padding-right: .5rem  ;
+  padding-right: .5rem;
   font-weight: 600;
   color: #EA2027;
+  position: relative;
+}
+.case--text-price {
+
 }
 .box-case--images {
   height: 100%;
@@ -561,7 +569,7 @@ body {
 /* ---------portfolio-------- */
 
 .portfolio {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background-color: #262626;
   color: #fff;
   overflow: hidden;
