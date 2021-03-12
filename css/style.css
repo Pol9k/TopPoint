@@ -551,7 +551,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 2rem;
+  margin: 0.5rem;
   transition: 0.3s;
 }
 .contract__box:hover {
