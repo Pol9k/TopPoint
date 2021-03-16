@@ -112,7 +112,7 @@ body {
   flex-direction: column;
   margin-bottom: 1.6rem;
   position: relative;
-  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem rgba(0, 0, 0, 0.4);
 
 }
 .start__contacts-mail {
@@ -121,17 +121,17 @@ body {
 .fa-volume-control-phone,
 .fa-envelope-o {
   font-size: 2rem;
-  /* color: #FFC312; */
-  color: #d10260;
+  color: #0f0;
   position: absolute;
   left: -2.8rem;
   top: -0.2rem;
-  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem rgba(0, 0, 0, 0.4);
 }
 .start__contacts-phone a:hover,
 .start__contacts-mail a:hover
 {
   font-weight: 700;
+  color:#0f0
 }
 .start__banner {
   position: absolute;
@@ -158,14 +158,14 @@ body {
 .start__text{
   position: relative;
   font-size: 3rem;
-  color: #000;
+  color: rgb(241, 234, 234);
   font-weight: 700;
   width: 70%;
   letter-spacing: .1rem;
   margin-bottom: 3rem;
-  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem rgba(0, 0, 0, 0.9);
   opacity: 0;
-  -webkit-text-stroke: 0.1rem #2c3e50;
+  -webkit-text-stroke: 0.1rem #14333b;
   z-index: 10;
   animation: moveBanner 1s .5s forwards;
 }
@@ -227,7 +227,7 @@ body {
   top: 0;
 }
 .navbar-link {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 400;
   color: #333;
   margin: 0 3rem;
@@ -300,11 +300,11 @@ body {
   text-shadow: 0.1rem 0.1rem 0.5rem #555;
 }
 .service h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   /* color: #f39c12; */
   color: #f2f2f2;
   background-color: #777;
-  width: 20rem;
+  width: 18rem;
   letter-spacing: 0.1rem;
   transform: skew(-10deg);
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
@@ -354,7 +354,6 @@ body {
 .views__section {
   max-width: 370px;
   max-height: 278px;
-  /* margin: 0.2rem; */
   position: relative;
   overflow: hidden;
   transition: all .5s;
@@ -396,9 +395,10 @@ body {
 
 .explain {
   margin-bottom: 2rem;
+  padding-top: 4rem;
 }
 .explain-title {
-  margin-top: 1rem;
+ 
 }
 .explain-text {
   margin-top: 3rem;
@@ -483,7 +483,7 @@ body {
   line-height: 1.6rem;
   width: 100%;
   position: relative;
-  padding-right: 5rem;
+  padding-right: 7rem;
 }
 .box-case--text-li span {
   position: absolute;
@@ -521,7 +521,7 @@ body {
 .box__btn {
   position: absolute;
   bottom: 0;
-  left: 1rem;
+  left: 0.5rem;
 }
 /* CASE END */
 .contract {
@@ -551,7 +551,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0.5rem;
+  margin: 1.5rem;
   transition: 0.3s;
 }
 .contract__box:hover {
@@ -752,8 +752,10 @@ body {
   color: #333;
 }
 .container-contactinfo .box .text h3 {
-  font-weight: 500;
+  font-weight: 600;
   color: #00d2d3;
+  color: #f39c12;
+
 }
 .contactForm {
   width: 40%;
@@ -882,4 +884,261 @@ body {
   color: #d3d2d2;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 1300px){
+  .contract__box {
+    margin: 0.5rem;
+  }
+}
+@media only screen and (max-width: 1220px){
+  .start__contacts {
+    top: 15%;
+  }
+  .start__text {
+    width: 100%;
+  }
+  .service h2 {
+    font-size: 1.8rem;
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .navbar-link{
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .aboutTopPoint-title {
+    padding-top: 4rem;
+  }
+  .title-h1 {
+    font-size: 2.5rem;
+  }
+  .aboutTopPoint-text,
+  .explain-text {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .service i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .service h2 {
+    font-size: 1.2rem;
+    width: 13rem;
+  }
+  .services {
+    min-height: 10rem;
+  }
+  .box__btn {
+    left: 0rem;
+  }
+  .ideasTopPoint__box {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 991px){
+  .start__contacts {
+    top: 25%;
+  }
+  .start__banner {
+    top: 37%;
+  } 
+  .start__title {
+    font-size: 7rem;
+  }
+  .start__text {
+    font-size: 2.5rem;
+  }
+  .wave-start {
+    bottom: 0;
+  }
+  .views__section-title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+    .ideasTopPoint-title {
+    font-size: 2.2rem;
+  }
+  
+}
+@media only screen and (max-width: 850px){
+  .start__title {
+    font-size: 6rem;
+  }
+  .start__text {
+    font-size: 2rem;
+  }
+  .box-case--images {
+    max-width: 48%;
+    height: 70%;
+  }
+  .container-contactinfo {
+    position: absolute;
+    z-index: -1;
+  }
+  .contactForm {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px){
+  .start__contacts {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .fa-volume-control-phone,
+  .fa-envelope-o {
+    font-size: 1.4rem;
+    left: -1.8rem;
+    top: 0rem;
+  }
+  .start__banner {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+  }
+  .navbar-link{
+    margin: 0 0.3rem;
+  }
+  .title-h1,
+  .ideasTopPoint-title {
+    font-size: 2rem;
+  }
+  .aboutTopPoint-text,
+  .explain-text {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.05rem;
+  }
+  .service i {
+    font-size: 3rem;
+  }
+  .service h2 {
+    font-size: 1.1rem;
+    width: 10rem;
+    padding: 0.2rem 0;
+  }
+  .services {
+    min-height: 10rem;
+  }
+  .views__section-title {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .ideasTopPoint__box {
+    width: 90%;
+    height: 100%;
+  }
+  .ideasTopPoint__box-case {
+    position: relative;
+  }
+  .box-case--text {
+    width: 100%;
+  }
+  .box-case--images {
+    position: absolute;
+    left: -200%;
+    height: auto;
+    z-index: -1;
+  }
+  .block__contact {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 620px){
+  .views__sections {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .views__section:hover {
+    transform: scale(1.1);
+  }
+}
+@media only screen and (max-width: 575px){
+  .start__title {
+    font-size: 4rem;
+  }
+  .start__text {
+    font-size: 1.5rem;
+    color: #000;
+    text-shadow: none;
+    -webkit-text-stroke: 0rem #000;
+  }
+  .start__contacts {
+    color: #000;
+  }
+  .start__link-first {
+    padding: 0.8rem 1rem;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+  .navbar-link {
+    font-size: 0.5rem;
+    margin: 0 0.3rem;
+    letter-spacing: 0.5px;
+  }
+  .title-h1,
+  .ideasTopPoint-title {
+    font-size: 1.5rem;
+  }
+  .ideasTopPoint__box-title {
+    font-size: 1.5rem;
+  }
+  .box-case--text-li {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+  .start__link {
+    background-color: rgba(255,0,88, 0.6);
+  }
+  .box__btn {
+    font-size: 1rem;
+  }
+  .portfolio {
+    padding: 1rem 0;
+  }
+}
+@media only screen and (max-width: 480px){
+  main {
+    min-width: 375px;
+  }
+  .navbar-link {
+    font-size: 0.3rem;
+    margin: 0 0.4rem;
+    letter-spacing: 0.3px;
+  }
+  .title-h1,
+  .ideasTopPoint-title {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  .views__section {
+    max-width: 300px;
+    max-height: 228px;
+    margin: 0 auto;
+  }
+  .views__sections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .views__section:hover {
+    transform: scale(1.05);
+  }
+  .block__contact_content-title {
+    font-size: 2rem;
+  }
+  .contactForm-title {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 375px){
+  
+  .navbar-link {
+    font-size: 0.3rem;
+    margin: 0 0.2rem;
+    letter-spacing: 0.3px;
+  }
 }
