@@ -402,17 +402,22 @@
         </div>
         <div class="contactForm">
           <form>
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Top Point">
+            <input type="hidden" name="admin_email" value="admin@mail.com">
+            <input type="hidden" name="form_subject" value="Foter Form">
+            <!--END-->
             <h2 class="contactForm-title">Отправить заявку</h2>
             <div class="inputBox">
-              <input type="text" name="" required="required" />
+              <input type="text" name="Имя" required="required" />
               <span>Имя</span>
             </div>
             <div class="inputBox">
-              <input type="text" name="" required="required" />
-              <span>Телефонный номер +380...</span>
+              <input type="number" name="Телефон" required="required" />
+              <span>+380...</span>
             </div>
             <div class="inputBox">
-              <textarea required="required" /></textarea>
+              <textarea required="required" name="Сообщение"></textarea>
               <span>Напишите нам ...</span>
             </div>
             <div class="inputBox">
@@ -472,7 +477,7 @@
     AOS.init();
   </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
