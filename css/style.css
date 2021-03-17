@@ -146,7 +146,7 @@ body {
   font-weight: 400;
   color: #de0266;
   letter-spacing: 0.2rem;
-  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem rgba(0, 0, 0, 0.4);
   opacity: 0;
   animation: moveBanner 1s .5s forwards;
   position: relative;
@@ -158,7 +158,7 @@ body {
 .start__text{
   position: relative;
   font-size: 3rem;
-  color: rgb(241, 234, 234);
+  color: #f39c12;
   font-weight: 700;
   width: 70%;
   letter-spacing: .1rem;
@@ -902,6 +902,9 @@ body {
     font-size: 1.8rem;
     width: 18rem;
   }
+  .block__contact {
+    padding: 3rem;
+  }
 }
 @media only screen and (max-width: 1024px){
   .navbar-link{
@@ -937,7 +940,7 @@ body {
   .ideasTopPoint__box {
     width: 100%;
   }
-
+  
 }
 @media only screen and (max-width: 991px){
   .start__contacts {
