@@ -523,6 +523,10 @@ body {
   bottom: 0;
   left: 0.5rem;
 }
+.text-free {
+  color: #16a085 !important;
+
+}
 /* CASE END */
 .contract {
   margin-top: 1rem;
